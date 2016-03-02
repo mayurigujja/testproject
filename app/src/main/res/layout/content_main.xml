@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/download"
+    android:id="@+id/background"
+    android:orientation="horizontal"
+    android:layout_gravity="center_horizontal"
+    android:weightSum="18"
+    android:stretchColumns="1"
+    android:shrinkColumns="1">
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TableRow>
+    <TableRow></TableRow>
+    <TableRow>
+    </TableRow>
+    <TableRow>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </TableRow>
+
+    <TableRow></TableRow>
+    <TableRow android:layout_marginTop="80dp">
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="@string/loan_amount_prompt"
+            android:gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="2dp"
+            android:textSize="22dp"
+            android:layout_column="0"
+            android:capitalize="none"
+            android:backgroundTint="#f00a0a"
+            android:textColor="#2113e4"
+            android:paddingTop="1dp"
+            android:textColorHighlight="#443da1"
+            android:textStyle="normal|bold" />
+
+        <EditText android:id="@+id/loan_amount"
+            android:inputType="numberDecimal"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_weight="1"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="2dp"
+            android:textSize="20dp"
+            android:textColor="#cf2828"
+            android:background="#FF6DF30D"
+            android:textStyle="bold">
+            <requestFocus></requestFocus>
+        </EditText>
+    </TableRow>
+    <TableRow>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:paddingBottom="1dp"
+            android:paddingTop="1dp"
+            android:text="@string/interest_rate_prompt"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="50dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="22dp"
+            android:layout_column="0"
+            android:textColor="#2113e4"
+            android:textStyle="normal|bold" />
+
+        <EditText android:id="@+id/interest_rate"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_size"
+            android:layout_marginRight="50dp"
+            android:layout_column="1"
+            android:textColor="#c02b2b"
+            android:background="#FF6DF30D"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="21dp"
+            android:layout_weight="1"
+            android:text="Period in yrs"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="50dp"
+            android:gravity="center"
+            android:layout_column="0"
+            android:textColor="#ec081b"
+            android:textStyle="bold" />
+
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="21dp"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Monthly Payments"
+            android:gravity="center"
+            android:layout_column="0"
+            android:textColor="#f20814"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:text="5"
+            android:gravity="center"
+            android:layout_column="0"
+            android:textColor="#090909"
+            android:textStyle="bold" />
+
+        <TextView android:id="@+id/monthly_payment_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_column="1"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/monthly_payment10"
+            android:layout_column="0"
+            android:textColor="#101010"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginRight="50dp"
+            android:textSize="20dp"
+            android:textColor="#1017e6"
+            android:gravity="center"
+            android:id="@+id/monthly_payment_result10"
+            android:layout_column="1" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/monthly_payment15"
+            android:layout_column="0"
+            android:textColor="#0d0d0d"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="1"
+            android:layout_marginRight="50dp"
+            android:textSize="@dimen/font_size"
+            android:textColor="#1bc129"
+            android:gravity="center"
+            android:id="@+id/monthly_payment_result15"
+            android:layout_column="1"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/monthly_payment20"
+
+            android:layout_column="0"
+            android:textColor="#121111"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="1"
+            android:textColor="#9311ea"
+            android:textSize="@dimen/font_size"
+            android:layout_marginRight="50dp"
+            android:gravity="center"
+            android:id="@+id/monthly_payment_result20"
+            android:layout_column="1"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/monthly_payment25"
+
+            android:layout_column="0"
+            android:textColor="#121111"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/font_size"
+            android:layout_marginRight="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/monthly_payment_result25"
+            android:textColor="#d9107f"
+            android:layout_column="1"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/monthly_payment30"
+
+            android:layout_column="0"
+            android:textColor="#181717"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_marginRight="50dp"
+            android:id="@+id/monthly_payment_result30"
+            android:textColor="#561ace"
+            android:layout_weight="1"
+            android:layout_column="1"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </TableRow>
+</TableLayout>
